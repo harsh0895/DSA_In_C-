@@ -23,7 +23,8 @@ int main(){
                 arr[j][i] = temp;
             }
         }
-        // Reverse each row:-
+        // Reverse each row:- for clock wise
+        // Reverse each column:- for anticlock wise
         for( int i=0; i<row; i++ ){
             int start = 0;
             int end = col-1;
@@ -35,7 +36,7 @@ int main(){
                 end--;
             }
         }
-    cout<<"After Rotation: "<<endl;
+    cout<<"After Rotation clock wise: "<<endl;
      for( int i=0; i<row; i++ ){
         for( int j=0; j<col; j++ ){
             cout<<arr[i][j]<<" ";
