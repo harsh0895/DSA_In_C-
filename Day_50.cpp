@@ -34,4 +34,14 @@ int main(){
 
     s1.push_back('p'); // harshp
     s1.pop_back(); // harsh
+
+    int start = 0;
+    int end = s.size()-1;
+    while ( start<end )
+    {
+        swap(s[start], s[end]);
+        start++, end--;
+    }
+    cout<<s<<endl;
+    
 }
